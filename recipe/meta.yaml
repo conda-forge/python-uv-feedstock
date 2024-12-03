@@ -23,15 +23,15 @@ source:
   patches:
     # replaces `maturin` with `setuptools`
     #
-    # this avoids 
-    # - populating `(Library/)bin` 
+    # this avoids
+    # - populating `(Library/)bin`
     # - forcing {os x arch x python} builds
-    # and enables 
-    # - the `uv` CLI (which can install its _own_ python) to be installed separately 
+    # and enables
+    # - the `uv` CLI (which can install its _own_ python) to be installed separately
     - 0000-no-rust.patch
     # provide binary path in `sys.prefix`
     #
-    # this replaces machinery which doesn't work with conda-forge packaging on osx/win 
+    # this replaces machinery which doesn't work with conda-forge packaging on osx/win
     # with a `sys.prefix`-relative path to the `uv` CLI provided by conda-forge/uv-feedstock
     - 0001-use-conda-forge-bin.patch
 
@@ -76,5 +76,4 @@ about:
 extra:
   recipe-maintainers:
     - bollwyvl
-    # TODO: add after feedstock creation
-    # - conda-forge/uv
+    - conda-forge/uv
