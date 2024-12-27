@@ -1,4 +1,4 @@
-{% set version = "0.5.12" %}
+{% set version = "0.5.13" %}
 
 {% set python_min = python_min | default("3.9") %}
 
@@ -19,7 +19,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/u/uv/uv-{{ version }}.tar.gz
-  sha256: c86978fccbcafc27a71518516eb76b0abda107fe0caee81726c0ec2111956c34
+  sha256: 58a66786f2e95c89539bafd819cf2959f56199457301eac8faa920c1872c4f36
   patches:
     # replaces `maturin` with `setuptools`
     #
