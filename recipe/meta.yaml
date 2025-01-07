@@ -1,7 +1,5 @@
 {% set version = "0.5.15" %}
 
-{% set python_min = python_min | default("3.9") %}
-
 # for the actual `uv` CLI tool (which does not require or link against `python`), see:
 # - https://github.com/conda-forge/uv-feedstock
 #
