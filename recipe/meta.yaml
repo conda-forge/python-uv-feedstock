@@ -1,4 +1,4 @@
-{% set version = "0.5.16" %}
+{% set version = "0.5.17" %}
 
 # for the actual `uv` CLI tool (which does not require or link against `python`), see:
 # - https://github.com/conda-forge/uv-feedstock
@@ -17,7 +17,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/u/uv/uv-{{ version }}.tar.gz
-  sha256: 598a0fa168ffe2786e11bfe0103fe22c06e90fe193ced172b843daf9abb42212
+  sha256: 8bc068efa148fd201a08cf24ee0296501123d61f8653c99e62457c79e42be187
   patches:
     # replaces `maturin` with `setuptools`
     #
