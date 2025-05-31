@@ -7,7 +7,7 @@
 
 [project]
 name = "python-uv-feedstock"
-version = "3.48.1"  # conda-smithy version used to generate this file
+version = "3.50.0"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/python-uv-feedstock"
 authors = ["@conda-forge/python-uv"]
 channels = ["conda-forge"]
