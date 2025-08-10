@@ -72,7 +72,8 @@ tests:
       - python -c "import uv; print(uv.find_uv_bin())"
       - uv --version
       - python -m uv --version
-      - mypy -p uv
+      # TODO: restore after https://github.com/astral-sh/uv/pull/15177
+      # - mypy -p uv
 
 about:
   summary: An extremely fast Python package and project manager, written in Rust. (with python)
