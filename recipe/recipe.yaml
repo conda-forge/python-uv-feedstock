@@ -14,7 +14,7 @@
 schema_version: 1
 
 context:
-  version: "0.8.6"
+  version: "0.8.8"
 
 package:
   name: python-uv
@@ -22,7 +22,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/u/uv/uv-${{ version }}.tar.gz
-  sha256: 4d4e042f6bd9f143094051a05de758684028f451e563846cbc0c6f505b530cca
+  sha256: 6880e96cd994e53445d364206ddb4b2fff89fd2fbc74a74bef4a6f86384b07d9
   patches:
     # replaces `maturin` with `setuptools`
     #
@@ -72,7 +72,8 @@ tests:
       - python -c "import uv; print(uv.find_uv_bin())"
       - uv --version
       - python -m uv --version
-      - mypy -p uv
+      # TODO: restore after https://github.com/astral-sh/uv/pull/15177
+      # - mypy -p uv
 
 about:
   summary: An extremely fast Python package and project manager, written in Rust. (with python)
