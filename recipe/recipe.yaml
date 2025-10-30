@@ -14,7 +14,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.5"
+  version: "0.9.6"
 
 package:
   name: python-uv
@@ -22,7 +22,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/u/uv/uv-${{ version }}.tar.gz
-  sha256: d8835d2c034421ac2235fb658bb4f669a301a0f1eb00a8430148dd8461b65641
+  sha256: 547fd27ab5da7cd1a833288a36858852451d416a056825f162ecf2af5be6f8b8
   patches:
     # replaces `maturin` with `setuptools`
     #
