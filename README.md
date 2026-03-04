@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@bollwyvl](https://github.com/bollwyvl/)
 * [@conda-forge/uv](https://github.com/orgs/conda-forge/teams/uv/)
 
-
-<!-- dummy commit to enable rerendering -->
-
